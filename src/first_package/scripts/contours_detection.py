@@ -30,7 +30,7 @@ def convert_gray_to_binary(gray_image, adaptive, show):
     return binary_image
 
 def getContours(binary_image):
-    contours, hierarchy = cv2.findContours(binary_image,
+    _,contours, hierarchy = cv2.findContours(binary_image,
                                         cv2.RETR_TREE,
                                         cv2.CHAIN_APPROX_SIMPLE)
     return contours
@@ -40,10 +40,10 @@ def draw_contours(image,contours, image_name):
     thickness = 2 #thickness of the contuor line
     color = (255, 0, 255)#color of the contour line
     cv2.drawContours(image,contours,index,color,thickness)
-    cv2.imshow(image_name,image)
+    cv2.imshow(image_name,image) 
 
 def main():
-    image_name = "/home/xiaoxin/catkin_ws/src/first_package/images/tomato.jpg"
+    image_name = "/home/xiaoxin/catkin_ws/src/first_package/images/shapes2.jpg"
     rgb_image = read_rgb_image(image_name, True)
     gray_image = convert_rgb_to_gray(rgb_image,True)
     binary_image = convert_gray_to_binary(gray_image,True,True)
@@ -51,7 +51,7 @@ def main():
     draw_contours(rgb_image,contours,"RGB Contours")
 
     cv2.waitKey(0)
-    cv2.destroyAllWindows()
+    cv2.destroyWindow()
 
 if __name__=='__main__':
     main()

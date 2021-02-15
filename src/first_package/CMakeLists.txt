@@ -1,4 +1,4 @@
-cmake_minimum_required(VERSION 3.0.2)
+cmake_minimum_required(VERSION 2.8.3)
 project(first_package)
 
 ## Compile as C++11, supported in ROS Kinetic and newer
@@ -11,9 +11,13 @@ find_package(catkin REQUIRED COMPONENTS
   roscpp
   rospy
   std_msgs
+  actionlib_msgs
   cv_bridge
+  image_transport
   message_generation
+  OpenCV REQUIRED
 )
+
 
 ## System dependencies are found with CMake's conventions
 # find_package(Boost REQUIRED COMPONENTS system)
@@ -77,7 +81,6 @@ add_service_files(
    #actionlib_msgs
  )
 
-
 ################################################
 ## Declare ROS dynamic reconfigure parameters ##
 ################################################
@@ -123,12 +126,13 @@ catkin_package(
 include_directories(
 # include
   ${catkin_INCLUDE_DIRS}
+  ${OpenCV_INCLUDE_DIRS}
 )
 
 ## Declare a C++ library
-# add_library(${PROJECT_NAME}
-#   src/${PROJECT_NAME}/first_package.cpp
-# )
+ #add_library(${PROJECT_NAME}
+  # src/${PROJECT_NAME}/first_package.cpp
+ #)
 
 ## Add cmake target dependencies of the library
 ## as an example, code may need to be generated before libraries
@@ -223,3 +227,18 @@ add_dependencies(add_two_number_server first_package_gencpp)
 add_executable(add_two_number_client service/add_number_client.cpp)
 target_link_libraries(add_two_number_client ${catkin_LIBRARIES})
 add_dependencies(add_two_number_client first_package_gencpp)
+
+
+find_package(OpenCV)
+include_directories(${OpenCV_INCLUDE_DIRS})
+add_executable(open_copy_inc++_cpp src/open_copy_inc++.cpp)
+target_link_libraries(open_copy_inc++_cpp ${catkin_LIBRATIES})
+target_link_libraries(open_copy_inc++_cpp ${OpenCV_LIBRARIES})
+
+add_executable(read_video_x_cpp src/read_video_x.cpp)
+target_link_libraries(read_video_x_cpp ${catkin_LIBRATIES})
+target_link_libraries(read_video_x_cpp ${OpenCV_LIBRARIES})
+
+#add_executable(image_sub_pub_cpp src/image_sub_pub.cpp)
+#target_link_libraries(image_sub_pub_cpp ${catkin_LIBRATIES})
+#target_link_libraries(image_sub_pub_cpp ${OpenCV_LIBRARIES})

@@ -12,6 +12,7 @@ from sensor_msgs.msg import Image
 from cv_bridge import CvBridge, CvBridgeError
 
 bridge = CvBridge()
+
 def camera_callback(ros_image):
     print("got an image")
     global bridge

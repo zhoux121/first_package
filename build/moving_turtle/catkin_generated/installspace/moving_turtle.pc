@@ -1,8 +1,0 @@
-prefix=/home/xiaoxin/catkin_ws/install
-
-Name: moving_turtle
-Description: Description of moving_turtle
-Version: 0.0.0
-Cflags: 
-Libs: -L${prefix}/lib -lmoving_turtle
-Requires: roscpp rospy std_msgs
