@@ -1,0 +1,8 @@
+prefix=/home/xiaoxin/catkin_ws/devel
+
+Name: usb_cam
+Description: Description of usb_cam
+Version: 0.3.6
+Cflags: -I/home/xiaoxin/catkin_ws/src/usb_cam-ros2/include
+Libs: -L${prefix}/lib -lusb_cam
+Requires: 

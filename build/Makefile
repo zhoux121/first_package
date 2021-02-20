@@ -2482,6 +2482,32 @@ flat_world_imu_node/fast:
 .PHONY : flat_world_imu_node/fast
 
 #=============================================================================
+# Target rules for targets named usb_cam_node
+
+# Build rule for target.
+usb_cam_node: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 usb_cam_node
+.PHONY : usb_cam_node
+
+# fast build rule for target.
+usb_cam_node/fast:
+	$(MAKE) -f usb_cam-ros2/CMakeFiles/usb_cam_node.dir/build.make usb_cam-ros2/CMakeFiles/usb_cam_node.dir/build
+.PHONY : usb_cam_node/fast
+
+#=============================================================================
+# Target rules for targets named usb_cam
+
+# Build rule for target.
+usb_cam: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 usb_cam
+.PHONY : usb_cam
+
+# fast build rule for target.
+usb_cam/fast:
+	$(MAKE) -f usb_cam-ros2/CMakeFiles/usb_cam.dir/build.make usb_cam-ros2/CMakeFiles/usb_cam.dir/build
+.PHONY : usb_cam/fast
+
+#=============================================================================
 # Target rules for targets named turtlebot3_description_xacro_generated_to_devel_space_
 
 # Build rule for target.
@@ -2685,6 +2711,8 @@ help:
 	@echo "... dynamic_reconfigure_generate_messages_cpp"
 	@echo "... gazebo_msgs_generate_messages_lisp"
 	@echo "... flat_world_imu_node"
+	@echo "... usb_cam_node"
+	@echo "... usb_cam"
 	@echo "... turtlebot3_description_xacro_generated_to_devel_space_"
 .PHONY : help
 

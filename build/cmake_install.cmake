@@ -143,6 +143,7 @@ if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   include("/home/xiaoxin/catkin_ws/build/turtlebot3_simulations/turtlebot3_gazebo/cmake_install.cmake")
   include("/home/xiaoxin/catkin_ws/build/turtlebot3/turtlebot3_slam/cmake_install.cmake")
   include("/home/xiaoxin/catkin_ws/build/turtlebot3/turtlebot3_teleop/cmake_install.cmake")
+  include("/home/xiaoxin/catkin_ws/build/usb_cam-ros2/cmake_install.cmake")
   include("/home/xiaoxin/catkin_ws/build/turtlebot3/turtlebot3_description/cmake_install.cmake")
 
 endif()

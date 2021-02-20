@@ -288,6 +288,15 @@
 /home/xiaoxin/catkin_ws/build/turtlebot3/turtlebot3_teleop/CMakeFiles/rebuild_cache.dir
 /home/xiaoxin/catkin_ws/build/turtlebot3/turtlebot3_teleop/CMakeFiles/edit_cache.dir
 /home/xiaoxin/catkin_ws/build/turtlebot3/turtlebot3_teleop/CMakeFiles/test.dir
+/home/xiaoxin/catkin_ws/build/usb_cam-ros2/CMakeFiles/install/strip.dir
+/home/xiaoxin/catkin_ws/build/usb_cam-ros2/CMakeFiles/install/local.dir
+/home/xiaoxin/catkin_ws/build/usb_cam-ros2/CMakeFiles/install.dir
+/home/xiaoxin/catkin_ws/build/usb_cam-ros2/CMakeFiles/list_install_components.dir
+/home/xiaoxin/catkin_ws/build/usb_cam-ros2/CMakeFiles/rebuild_cache.dir
+/home/xiaoxin/catkin_ws/build/usb_cam-ros2/CMakeFiles/edit_cache.dir
+/home/xiaoxin/catkin_ws/build/usb_cam-ros2/CMakeFiles/test.dir
+/home/xiaoxin/catkin_ws/build/usb_cam-ros2/CMakeFiles/usb_cam_node.dir
+/home/xiaoxin/catkin_ws/build/usb_cam-ros2/CMakeFiles/usb_cam.dir
 /home/xiaoxin/catkin_ws/build/turtlebot3/turtlebot3_description/CMakeFiles/install/local.dir
 /home/xiaoxin/catkin_ws/build/turtlebot3/turtlebot3_description/CMakeFiles/install.dir
 /home/xiaoxin/catkin_ws/build/turtlebot3/turtlebot3_description/CMakeFiles/list_install_components.dir
